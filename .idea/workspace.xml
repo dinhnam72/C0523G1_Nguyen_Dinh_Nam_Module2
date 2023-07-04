@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ab3c4699-a1ac-40f7-9654-43f4f3e45687" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/C0523G1_Nguyen_Dinh_Nam_Module2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/C0523G1_Nguyen_Dinh_Nam_Module2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/C0523G1_Nguyen_Dinh_Nam_Module2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/C0523G1_Nguyen_Dinh_Nam_Module2/C0523G1_Nguyen_Dinh_Nam_Module2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/C0523G1_Nguyen_Dinh_Nam_Module2/out/production/C0523G1_Nguyen_Dinh_Nam_Module2/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/C0523G1_Nguyen_Dinh_Nam_Module2/out/production/C0523G1_Nguyen_Dinh_Nam_Module2/ss01_introduction_to_java/exercise/Chuyendoitiente.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/C0523G1_Nguyen_Dinh_Nam_Module2/out/production/C0523G1_Nguyen_Dinh_Nam_Module2/ss01_introduction_to_java/exercise/Hien_thi_loi_chao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/C0523G1_Nguyen_Dinh_Nam_Module2/out/production/C0523G1_Nguyen_Dinh_Nam_Module2/ss01_introduction_to_java/exercise/So_thanh_chu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/C0523G1_Nguyen_Dinh_Nam_Module2/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/C0523G1_Nguyen_Dinh_Nam_Module2/src/ss01_introduction_to_java/exercise/Chuyendoitiente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/C0523G1_Nguyen_Dinh_Nam_Module2/src/ss01_introduction_to_java/exercise/Hien_thi_loi_chao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/C0523G1_Nguyen_Dinh_Nam_Module2/src/ss01_introduction_to_java/exercise/So_thanh_chu.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2S5ipfFF3mrJ37RC4DdDh9rm22S" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Codegym/Module2/C0523G1_Nguyen_Dinh_Nam_Module2/C0523G1_Nguyen_Dinh_Nam_Module2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Codegym\Module2\C0523G1_Nguyen_Dinh_Nam_Module2\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.So_thanh_chu">
+    <configuration name="Chuyendoitiente" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss01_introduction_to_java.exercise.Chuyendoitiente" />
+      <module name="C0523G1_Nguyen_Dinh_Nam_Module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss01_introduction_to_java.exercise.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="So_thanh_chu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss01_introduction_to_java.exercise.So_thanh_chu" />
+      <module name="C0523G1_Nguyen_Dinh_Nam_Module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss01_introduction_to_java.exercise.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.So_thanh_chu" />
+        <item itemvalue="Application.Chuyendoitiente" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ab3c4699-a1ac-40f7-9654-43f4f3e45687" name="Changes" comment="" />
+      <created>1688443031659</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688443031659</updated>
+      <workItem from="1688443032832" duration="13036000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
