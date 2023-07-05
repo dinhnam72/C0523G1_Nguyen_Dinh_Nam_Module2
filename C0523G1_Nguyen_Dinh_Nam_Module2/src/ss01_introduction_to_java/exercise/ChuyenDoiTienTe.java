@@ -2,7 +2,7 @@ package ss01_introduction_to_java.exercise;
 
 import java.util.Scanner;
 
-public class Chuyendoitiente {
+public class ChuyenDoiTienTe {
     public static void main(String[] args) {
         int chuyenDoi = 23000;
         int usd;
