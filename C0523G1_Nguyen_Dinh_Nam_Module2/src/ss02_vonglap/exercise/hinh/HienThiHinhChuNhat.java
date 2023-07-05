@@ -1,4 +1,4 @@
-package ss02_vonglap.exercise;
+package ss02_vonglap.exercise.hinh;
 
 public class HienThiHinhChuNhat  {
     public static void main(String[] args) {
