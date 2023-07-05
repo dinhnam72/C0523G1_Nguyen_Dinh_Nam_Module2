@@ -1,4 +1,4 @@
-package ss02_vonglap.exercise;
+package ss02_vonglap.exercise.hinh;
 
 import java.util.Scanner;
 
