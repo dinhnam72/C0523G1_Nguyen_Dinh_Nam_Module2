@@ -2,10 +2,10 @@ package giaithuat;
 
 public class Bt1 {
     public static void main(String[] args) {
-        for (int i = -4; i <= 4; i++) {
-            for (int j = 1; j < 11; j++) {
-                if (Math.abs(i) + j == 10 || j - Math.abs(i) == 1) {
-                    System.out.print(5 - Math.abs(i));
+        for (int hang = -4; hang <= 4; hang++) {
+            for (int cot = 1; cot < 11; cot++) {
+                if (Math.abs(hang) + cot == 10 || cot - Math.abs(hang) == 1) {
+                    System.out.print(5 - Math.abs(hang));
                 } else {
                     System.out.print(" ");
                 }
