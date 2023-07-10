@@ -1,7 +1,8 @@
 package ss04_lop_doituong.exercise.stopwatch;
 
 public class StopWatch {
-    private long startTime, endTime;
+    private long startTime;
+    private long endTime;
 
     public long getStartTime() {
         return startTime;
