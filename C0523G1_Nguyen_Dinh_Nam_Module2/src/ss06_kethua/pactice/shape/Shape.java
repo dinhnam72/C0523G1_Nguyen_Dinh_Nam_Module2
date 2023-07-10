@@ -1,13 +1,10 @@
-package ss06_kethua.pactice.hinhhoc;
+package ss06_kethua.pactice.shape;
 
 public class Shape {
     private String color = "green";
     private boolean filled = true;
-    public Shape(){
 
-    }
-
-    public Shape(double side, double v, String color, boolean filled) {
+    public Shape() {
     }
 
     public Shape(String color, boolean filled) {

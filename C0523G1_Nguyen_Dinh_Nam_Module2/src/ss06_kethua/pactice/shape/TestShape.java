@@ -1,4 +1,4 @@
-package ss06_kethua.pactice.hinhhoc;
+package ss06_kethua.pactice.shape;
 
 public class TestShape {
     public static void main(String[] args) {
