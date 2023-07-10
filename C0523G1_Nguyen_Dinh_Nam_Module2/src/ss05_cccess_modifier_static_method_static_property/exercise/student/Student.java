@@ -18,6 +18,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return "My name is: " + name + "\n My class is: " + classes;
+        return "My name is: " + name + "\nMy class is: " + classes;
     }
 }

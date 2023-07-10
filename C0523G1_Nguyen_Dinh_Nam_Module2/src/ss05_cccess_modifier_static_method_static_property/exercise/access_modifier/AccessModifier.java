@@ -7,9 +7,8 @@ public class AccessModifier {
 
     }
 
-    public AccessModifier(double radius, String color) {
+    public AccessModifier(double radius) {
         this.radius = radius;
-        this.color = color;
     }
 
     public double getRadius() {

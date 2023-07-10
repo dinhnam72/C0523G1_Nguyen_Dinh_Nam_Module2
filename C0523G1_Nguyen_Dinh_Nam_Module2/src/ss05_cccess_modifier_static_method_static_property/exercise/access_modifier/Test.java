@@ -3,7 +3,7 @@ package ss05_cccess_modifier_static_method_static_property.exercise.access_modif
 public class Test {
     public static void main(String[] args) {
         AccessModifier accessModifier = new AccessModifier();
-        AccessModifier accessModifier1 = new AccessModifier(2, "yellow");
+        AccessModifier accessModifier1 = new AccessModifier(2);
         System.out.print("radius old: ");
         System.out.println(accessModifier.getRadius());
         System.out.print("area: ");
