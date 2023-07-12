@@ -1,8 +1,8 @@
 package ss06_kethua.exercise.circle_cylinder.circle;
 
 public class Circle {
-    private double radius = 1.0;
-    private String color = "blue";
+    private double radius ;
+    private String color;
 
     public Circle() {
 

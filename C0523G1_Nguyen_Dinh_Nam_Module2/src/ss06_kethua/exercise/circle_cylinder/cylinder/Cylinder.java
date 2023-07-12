@@ -3,7 +3,7 @@ package ss06_kethua.exercise.circle_cylinder.cylinder;
 import ss06_kethua.exercise.circle_cylinder.circle.Circle;
 
 public class Cylinder extends Circle {
-    private double height = 2;
+    private double height;
 
     public Cylinder() {
 
