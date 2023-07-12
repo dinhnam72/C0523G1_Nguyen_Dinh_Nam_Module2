@@ -1,6 +1,6 @@
 package ss07_abstract_class_Interface.exercise.colorable;
 
-public interface Resizeable {
+public interface Colorable {
 
-    void resizeable (double percent);
+    void howToColor();
 }

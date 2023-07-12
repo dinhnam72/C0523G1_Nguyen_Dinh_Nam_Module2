@@ -1,7 +1,8 @@
-package ss07_abstract_class_Interface.exercise.shape;
+package ss07_abstract_class_Interface.exercise.colorable;
 
 public class Circle extends Shape {
     private double radius;
+
 
     public Circle(double radius) {
         this.radius = radius;
@@ -19,10 +20,6 @@ public class Circle extends Shape {
         return radius * radius * Math.PI;
     }
 
-    @Override
-    public void resizeable(double percent) {
-        setRadius(radius + radius * percent);
-    }
 
     @Override
     public String toString() {
@@ -31,6 +28,7 @@ public class Circle extends Shape {
                 ", area=" + getArea() +
                 '}';
     }
+
 }
 
 

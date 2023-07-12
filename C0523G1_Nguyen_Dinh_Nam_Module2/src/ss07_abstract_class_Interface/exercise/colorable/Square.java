@@ -1,6 +1,6 @@
-package ss07_abstract_class_Interface.exercise.shape;
+package ss07_abstract_class_Interface.exercise.colorable;
 
-public class Square extends Shape {
+public class Square extends Shape implements Colorable {
     public double side;
 
     public Square(double side) {
@@ -20,15 +20,15 @@ public class Square extends Shape {
     }
 
     @Override
-    public void resizeable(double percent) {
-        setSide(side + side * percent);
-    }
-
-    @Override
     public String toString() {
         return "Square{" +
                 "side=" + side +
                 ", area=" + getArea() +
                 '}';
+    }
+
+    @Override
+    public void howToColor() {
+        System.out.println("Color all four sides.");
     }
 }

@@ -1,4 +1,4 @@
-package ss07_abstract_class_Interface.exercise.shape;
+package ss07_abstract_class_Interface.exercise.colorable;
 
 public class Rectangle extends Shape {
     private double width;
@@ -27,12 +27,6 @@ public class Rectangle extends Shape {
 
     public double getArea() {
         return width * height;
-    }
-
-    @Override
-    public void resizeable(double percent) {
-        setWidth(width + width * percent);
-        setHeight((height + height * percent));
     }
 
     @Override
