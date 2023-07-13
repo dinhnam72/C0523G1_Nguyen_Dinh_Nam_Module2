@@ -40,7 +40,7 @@ public class Rectangle extends Shape {
         return "Rectangle{" +
                 "width=" + width +
                 ", height=" + height +
-                ",area= " + getArea() +
+                ", area= " + getArea() +
                 '}';
     }
 }

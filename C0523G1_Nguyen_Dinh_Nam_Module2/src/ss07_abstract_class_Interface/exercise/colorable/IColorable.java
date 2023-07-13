@@ -1,6 +1,6 @@
 package ss07_abstract_class_Interface.exercise.colorable;
 
-public interface Colorable {
+public interface IColorable {
 
     void howToColor();
 }
