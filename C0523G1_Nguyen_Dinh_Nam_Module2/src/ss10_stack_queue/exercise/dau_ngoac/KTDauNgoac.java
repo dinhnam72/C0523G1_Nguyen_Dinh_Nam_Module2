@@ -4,26 +4,20 @@ import java.util.Stack;
 
 public class KTDauNgoac {
     public void ktDauNgoac(String str) {
-        Stack<Character> bStack = new Stack<>();
+        Stack<Character> leftStack = new Stack<>();
+        Stack<Character> rightSack = new Stack<>();
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == '(') {
-                bStack.push(str.charAt(i));
+                leftStack.push(str.charAt(i));
             }
-        }
-        for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == ')') {
-                if (bStack.isEmpty()) {
-                    System.out.println("Sai");
-                    break;
-                } else {
-                    bStack.pop();
-                }
+                rightSack.push(str.charAt(i));
             }
         }
-        if (bStack.isEmpty()) {
-            System.out.println("Đúng");
+        if (leftStack.size() == rightSack.size()) {
+            System.out.println("Well");
         } else {
-            System.out.println("Sai");
+            System.out.println("No");
         }
     }
 }
