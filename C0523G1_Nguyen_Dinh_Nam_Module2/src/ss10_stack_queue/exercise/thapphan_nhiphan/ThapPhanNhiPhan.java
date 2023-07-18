@@ -9,16 +9,17 @@ public class ThapPhanNhiPhan {
         System.out.print("Nhập hệ thập phân bạn muốn chuyển đổi: ");
         int number = scanner.nextInt();
         int nhiPhan;
+
         Stack<Integer> dsNhiPhan = new Stack<>();
         do {
             nhiPhan = number % 2;
             number = number / 2;
             dsNhiPhan.push(nhiPhan);
         } while (number != 0);
+        int size = dsNhiPhan.size();
         System.out.print("Tập hợp các số nhị phân được chuyển đổi: ");
-        for (int i = 0; i < dsNhiPhan.size(); i++) {
+        for (int i = 0; i < size; i++) {
             System.out.print(dsNhiPhan.pop());
-            i--;
         }
 
     }
