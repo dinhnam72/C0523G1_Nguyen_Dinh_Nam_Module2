@@ -9,15 +9,15 @@ public class ChuoiLienTiepLonNhat {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhập chuỗi bạn muốn: ");
-        String input = scanner.nextLine();
-        input.split("");
+        String str = scanner.nextLine();
+        str.split("");
         LinkedList<Character> max = new LinkedList<>();
-        for (int i = 0; i < input.length(); i++) {
+        for (int i = 0; i < str.length(); i++) {
             LinkedList<Character> list = new LinkedList<>();
-            list.add(input.charAt(i));
-            for (int j = i + 1; j < input.length(); j++) {
-                if (input.charAt(j) > list.getLast()) {
-                    list.add(input.charAt(j));
+            list.add(str.charAt(i));
+            for (int j = i + 1; j < str.length(); j++) {
+                if (str.charAt(j) > list.getLast()) {
+                    list.add(str.charAt(j));
                 } else
                     break;
             }

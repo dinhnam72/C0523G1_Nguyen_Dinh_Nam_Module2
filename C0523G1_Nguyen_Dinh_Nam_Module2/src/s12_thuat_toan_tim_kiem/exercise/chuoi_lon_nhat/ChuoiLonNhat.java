@@ -7,19 +7,19 @@ public class ChuoiLonNhat {
         System.out.print("Nhập chuỗi bạn muốn kiểm tra: ");
         Scanner scanner = new Scanner(System.in);
         //tạo chuỗi
-        String input = scanner.nextLine();
+        String str = scanner.nextLine();
         //tạo LinkedList chứa các ký tự tăng dần theo bảng chữ cái ASCII
         LinkedList<Character> max = new LinkedList<>();
-        for (int i = 0; i < input.length(); i++) {
+        for (int i = 0; i < str.length(); i++) {
             //tạo List chứa ký tự tăng theo từng trường hợp i
             LinkedList<Character> myList = new LinkedList<>();
             //thêm ký tự i vào myList
-            myList.add(input.charAt(i));
-            for (int j = i + 1; j < input.length(); j++) {
+            myList.add(str.charAt(i));
+            for (int j = i + 1; j < str.length(); j++) {
                 //kiểm tra ký tự j có lớn hơn giá trị cuối cùng trong myList
-                if (input.charAt(j) > myList.getLast()) {
+                if (str.charAt(j) > myList.getLast()) {
                     //thêm ký tự j vào
-                    myList.add(input.charAt(j));
+                    myList.add(str.charAt(j));
                 }
             }
             //so sánh mảng myList vs mảng max
