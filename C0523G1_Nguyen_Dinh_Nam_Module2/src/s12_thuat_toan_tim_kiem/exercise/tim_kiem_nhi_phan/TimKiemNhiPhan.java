@@ -19,6 +19,7 @@ public class TimKiemNhiPhan {
             arrayList.add(number);
         }
 
+
         //Sắp xếp pần tử
         arrayList.sort((o1, o2) -> o1 - o2);
         System.out.print("Giá trị của mảng: ");
@@ -37,19 +38,19 @@ public class TimKiemNhiPhan {
 
     //B3: Tạo 1 thương thức để kiểm tra vị trí
     public static int binarySearch(List<Integer> arrayList, int left, int right, int value) {
-        while (left <= right) {
-            //Khai báo giá trị ở giữa mảng
-            int mid = (left + right) / 2;
-            //So sánh giá trị tại vị trí mid = value thì return vị trí mid
-            if (arrayList.get(mid) == value) {
-                return mid;
-                //giá trị ại mid <value thì gán lại giá trị right
-            } else if (arrayList.get(mid) > value) {
-                right = mid - 1;
-                // giá trị mid>value thì gán lại giá trị left
-            } else {
-                left = mid + 1;
-            }
+        //Khai báo giá trị ở giữa mảng
+        int mid = (left + right) / 2;
+        //So sánh giá trị tại vị trí mid = value thì return vị trí mid
+        if (arrayList.get(mid) == value) {
+            return mid;
+            //giá trị ại mid <value thì gán lại giá trị right
+        } else if (arrayList.get(mid) > value) {
+            right = mid - 1;
+        } else {
+            left = mid + 1;
+        }
+        if (left <= right) {
+            return binarySearch(arrayList, left, right, value);
         }
         //nếu mảng không có giá trị cần tìm thì return -1
         return -1;
