@@ -1,8 +1,6 @@
-package s12_thuat_toan_tim_kiem.exercise.chuoi_lien_tiep;
+package ss2_thuat_toan_tim_kiem.exercise.chuoi_lien_tiep;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Scanner;
 
 public class ChuoiLienTiepLonNhat {

@@ -1,4 +1,4 @@
-package s12_thuat_toan_tim_kiem.exercise.tim_kiem_nhi_phan;
+package ss2_thuat_toan_tim_kiem.exercise.tim_kiem_nhi_phan;
 
 import java.util.ArrayList;
 import java.util.List;

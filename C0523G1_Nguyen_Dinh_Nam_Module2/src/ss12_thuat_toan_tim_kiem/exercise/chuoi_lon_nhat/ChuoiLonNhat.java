@@ -1,4 +1,4 @@
-package s12_thuat_toan_tim_kiem.exercise.chuoi_lon_nhat;
+package ss2_thuat_toan_tim_kiem.exercise.chuoi_lon_nhat;
 
 import java.util.*;
 

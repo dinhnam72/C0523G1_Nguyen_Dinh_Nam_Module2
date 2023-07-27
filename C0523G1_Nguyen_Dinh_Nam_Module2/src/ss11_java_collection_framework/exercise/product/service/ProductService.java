@@ -3,7 +3,6 @@ package s11_java_collection_framework.exercise.product.service;
 import s11_java_collection_framework.exercise.product.model.Product;
 import s11_java_collection_framework.exercise.product.repository.IProductRepository;
 import s11_java_collection_framework.exercise.product.repository.ProductRepository;
-import s11_java_collection_framework.exercise.quan_ly_san_pham.model.SanPham;
 
 import java.util.List;
 import java.util.Scanner;
