@@ -1,4 +1,4 @@
-package ss16_string_regex.exercise.bt1;
+package ss17_string_regex.exercise.bt1;
 
 import java.util.Scanner;
 

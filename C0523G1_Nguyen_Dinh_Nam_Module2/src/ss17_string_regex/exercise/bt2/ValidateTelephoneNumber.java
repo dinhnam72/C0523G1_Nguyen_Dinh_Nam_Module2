@@ -1,9 +1,9 @@
-package ss16_string_regex.exercise.bt2;
+package ss17_string_regex.exercise.bt2;
 
 import java.util.Scanner;
 
 public class ValidateTelephoneNumber {
-    private static final String REGEX = "\\(\\d{2}\\)[-]\\([0]\\d{9}\\)";
+    private static final String REGEX = "\\(\\d{2}\\)[-]\\(0\\d{9}\\)";
     public static void main(String[] args) {
         do {
             Scanner scanner = new Scanner(System.in);

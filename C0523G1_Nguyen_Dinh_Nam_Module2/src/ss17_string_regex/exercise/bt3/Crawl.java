@@ -1,4 +1,4 @@
-package ss16_string_regex.exercise.bt3;
+package ss17_string_regex.exercise.bt3;
 
 import java.io.*;
 import java.net.HttpURLConnection;
