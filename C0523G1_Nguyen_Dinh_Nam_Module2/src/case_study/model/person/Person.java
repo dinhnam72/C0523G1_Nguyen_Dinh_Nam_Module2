@@ -1,9 +1,12 @@
 package case_study.model.person;
 
+import java.time.LocalDate;
+import java.util.Objects;
+
 public abstract class Person {
     private String id;
     private String name;
-    private String date;
+    private LocalDate date;
     private String gender;
     private String identityCard;
     private String telephone;
@@ -11,8 +14,11 @@ public abstract class Person {
 
     public Person() {
     }
+    public Person(String id){
+        this.id = id;
+    }
 
-    public Person(String id, String name, String date, String gender, String identityCard, String telephone, String email) {
+    public Person(String id, String name, LocalDate date, String gender, String identityCard, String telephone, String email) {
         this.id = id;
         this.name = name;
         this.date = date;
@@ -38,11 +44,11 @@ public abstract class Person {
         this.name = name;
     }
 
-    public String getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 
@@ -80,14 +86,13 @@ public abstract class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "id='" + id + '\'' +
+        return  "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", date='" + date + '\'' +
                 ", gender='" + gender + '\'' +
                 ", identityCard=" + identityCard +
                 ", telephone=" + telephone +
-                ", email='" + email + '\'' +
-                '}';
+                ", email='" + email + '\''
+                ;
     }
 }

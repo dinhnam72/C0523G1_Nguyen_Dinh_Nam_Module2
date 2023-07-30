@@ -25,16 +25,16 @@ public class EmployeeController {
                     employeeService.displayEmployee();
                     break;
                 case 2:
-                    //
+                    employeeService.addEmployee();
                     break;
                 case 3:
-                    //
+                    employeeService.editEmployee();
                     break;
                 case 4:
-                    //
+                    employeeService.removeEmployee();
                     break;
                 case 5:
-                    //
+                    employeeService.searchEmployee();
                     break;
                 case 6:
                     FuramaController.displayMainMenu();
