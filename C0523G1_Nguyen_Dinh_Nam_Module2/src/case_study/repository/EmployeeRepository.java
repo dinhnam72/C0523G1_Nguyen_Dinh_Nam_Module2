@@ -9,12 +9,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EmployeeRepository implements IEmployeeRepository {
-    private static final String FILE_PATH = "D:\\Codegym\\Module2\\C0523G1_Nguyen_Dinh_Nam_Module2\\C0523G1_Nguyen_Dinh_Nam_Module2\\src\\case_study\\data\\employee.csv";
+    private static final String EMPLOYEE_FILE = "D:\\Codegym\\Module2\\C0523G1_Nguyen_Dinh_Nam_Module2\\C0523G1_Nguyen_Dinh_Nam_Module2\\src\\case_study\\data\\employee.csv";
 
     @Override
     public List<Employee> getAllEmployee() {
         List<Employee> employeeList = new ArrayList<>();
-        List<String> strings = ReadAndWriteFile.readFromCSV(FILE_PATH);
+        List<String> strings = ReadAndWriteFile.readFromCSV(EMPLOYEE_FILE);
         String[] array;
         Employee employee;
         for (String string : strings) {
@@ -39,28 +39,28 @@ public class EmployeeRepository implements IEmployeeRepository {
     public void addEmployee(Employee employee) {
         List<String> strings = new ArrayList<>();
         strings.add(employee.getInforToCSV());
-        ReadAndWriterFile.writeToCSV(FILE_PATH, strings, true);
+        ReadAndWriterFile.writeToCSV(EMPLOYEE_FILE, strings, true);
     }
 
     @Override
     public void editEmployee(String id, Employee employee) {
-        List<Employee> employeeList = this.getAllEmployee();
+        List<Employee> employeeList = getAllEmployee();
         int index = employeeList.indexOf(new Employee(id));
         if (index != -1) {
-          employeeList.set(index, employee);
+            employeeList.set(index, employee);
             List<String> stringList = new ArrayList<>();
-            for (Employee employee1 : getAllEmployee()) {
+            for (Employee employee1 : employeeList) {
                 stringList.add(employee1.getInforToCSV());
             }
-            ReadAndWriterFile.writeToCSV(FILE_PATH, stringList, false);
+            ReadAndWriterFile.writeToCSV(EMPLOYEE_FILE, stringList, false);
         } else {
-            System.out.println("Id không có trong hệ thống. Xin hãy nhập lại.");
+            System.out.println("Id không có trong hệ thống. Xin hãy nhập lại");
         }
     }
 
     @Override
     public void removeEmployee(String id) {
-        List<Employee> employeeList = this.getAllEmployee();
+        List<Employee> employeeList = getAllEmployee();
         int index = employeeList.indexOf(new Employee(id));
         if (index != -1) {
             employeeList.remove(index);
@@ -68,7 +68,7 @@ public class EmployeeRepository implements IEmployeeRepository {
             for (Employee employee1 : employeeList) {
                 stringList.add(employee1.getInforToCSV());
             }
-            ReadAndWriterFile.writeToCSV(FILE_PATH, stringList, false);
+            ReadAndWriterFile.writeToCSV(EMPLOYEE_FILE, stringList, false);
         } else {
             System.out.println("Id không có trong hệ thống. Xin hãy nhập lại.");
         }

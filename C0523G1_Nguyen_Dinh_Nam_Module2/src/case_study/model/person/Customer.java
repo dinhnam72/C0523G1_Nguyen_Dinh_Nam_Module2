@@ -1,11 +1,15 @@
 package case_study.model.person;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class Customer extends Person {
     private String customerType;
     private String address;
     public Customer() {
+    }
+    public Customer(String id){
+        super(id);
     }
 
     public Customer(String customerType, String address) {
@@ -34,12 +38,23 @@ public class Customer extends Person {
     public void setAddress(String address) {
         this.address = address;
     }
+    public String getInforToCSV() {
+        return this.getId() + "," + this.getName() + "," + this.getDate() + "," + this.getGender() + "," + this.getIdentityCard() + "," + this.getTelephone() + "," + this.getEmail() + "," + this.getCustomerType() + "," + this.getAddress() ;
+    }
 
     @Override
     public String toString() {
-        return "Customer{" +
+        return "Customer{" + super.toString()+
                 "customerType='" + customerType + '\'' +
                 ", address='" + address + '\'' +
                 '}';
     }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+       Customer customer =(Customer) o;
+        return Objects.equals(super.getId(),customer.getId());
+    }
+
 }

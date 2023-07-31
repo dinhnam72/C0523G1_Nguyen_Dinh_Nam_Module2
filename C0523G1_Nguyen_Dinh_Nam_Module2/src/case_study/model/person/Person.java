@@ -14,7 +14,8 @@ public abstract class Person {
 
     public Person() {
     }
-    public Person(String id){
+
+    public Person(String id) {
         this.id = id;
     }
 
@@ -86,7 +87,7 @@ public abstract class Person {
 
     @Override
     public String toString() {
-        return  "id='" + id + '\'' +
+        return "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", date='" + date + '\'' +
                 ", gender='" + gender + '\'' +

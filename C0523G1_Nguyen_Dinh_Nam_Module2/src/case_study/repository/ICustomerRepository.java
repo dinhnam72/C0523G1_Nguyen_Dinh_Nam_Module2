@@ -1,13 +1,13 @@
 package case_study.repository;
 
-import giaithuat.mvc.model.Customer;
+import case_study.model.person.Customer;
 
 import java.util.List;
 
 public interface ICustomerRepository {
-    List<Customer> getAll();
+    List<Customer> getAllCustomer();
     void addCustomer(Customer customer);
-    void editCustomer(int id);
-    void removeCustomer(int id);
-    void searchCustomer(String name);
+    void editCustomer(String id,Customer customer);
+    void removeCustomer(String id);
+    List<Customer> searchCustomer(String name);
 }
