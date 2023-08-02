@@ -1,9 +1,10 @@
 package case_study.model.furama;
 
-public class Villa extends Facility{
+public class Villa extends Facility {
     private String roomStandard;
     private double swimmingArea;
     private int floor;
+
     public Villa() {
     }
 
@@ -13,7 +14,7 @@ public class Villa extends Facility{
         this.floor = floor;
     }
 
-    public Villa(int id, String name, double area, int costs, int maxPeople, String rentalType, String roomStandard, double swimmingArea, int floor) {
+    public Villa(String id, String name, double area, int costs, int maxPeople, String rentalType, String roomStandard, double swimmingArea, int floor) {
         super(id, name, area, costs, maxPeople, rentalType);
         this.roomStandard = roomStandard;
         this.swimmingArea = swimmingArea;
@@ -46,7 +47,7 @@ public class Villa extends Facility{
 
     @Override
     public String toString() {
-        return "Villa{" +
+        return "Villa{" + super.toString() +
                 "roomStandard='" + roomStandard + '\'' +
                 ", swimmingArea=" + swimmingArea +
                 ", floor=" + floor +

@@ -1,4 +1,14 @@
 package case_study.repository;
 
-public class IFacilityRepository {
+import case_study.model.furama.Facility;
+import case_study.model.furama.Villa;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public interface IFacilityRepository {
+    Map<Facility,Integer> getALlFacility() ;
+    void addFacility(Facility facility);
+    LinkedHashMap<Facility,Integer> getFacilityMaintenance();
+    void removeFacility();
 }

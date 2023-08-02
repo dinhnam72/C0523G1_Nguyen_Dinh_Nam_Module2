@@ -48,8 +48,9 @@ public class CustomerService implements ICustomerService {
         } while (!name.matches(REX_NAME));
 
         LocalDate dateOfBirth = null;
-        boolean flag = false;
+        boolean flag;
         do {
+            flag = false;
             try {
                 System.out.print("Input dateCustomer: ");
                 String date = scanner.nextLine();
@@ -127,8 +128,9 @@ public class CustomerService implements ICustomerService {
         } while (!name.matches(REX_NAME));
 
         LocalDate dateOfBirth = null;
-        boolean flag = false;
+        boolean flag;
         do {
+            flag = false;
             try {
                 System.out.print("Input dateCustomer: ");
                 String date = scanner.nextLine();

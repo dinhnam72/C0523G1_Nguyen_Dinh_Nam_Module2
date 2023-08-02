@@ -11,7 +11,7 @@ public class House extends  Facility{
         this.floor = floor;
     }
 
-    public House(int id, String name, double area, int costs, int maxPeople, String rentalType, String roomStandard, int floor) {
+    public House(String id, String name, double area, int costs, int maxPeople, String rentalType, String roomStandard, int floor) {
         super(id, name, area, costs, maxPeople, rentalType);
         this.roomStandard = roomStandard;
         this.floor = floor;
@@ -35,7 +35,7 @@ public class House extends  Facility{
 
     @Override
     public String toString() {
-        return "House{" +
+        return "House{" + super.toString()+
                 "roomStandard='" + roomStandard + '\'' +
                 ", floor=" + floor +
                 '}';

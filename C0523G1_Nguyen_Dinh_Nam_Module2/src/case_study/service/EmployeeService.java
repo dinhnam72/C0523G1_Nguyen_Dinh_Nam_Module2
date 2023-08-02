@@ -12,7 +12,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class EmployeeService implements IEmployeeService {
-    static IEmployeeRepository employeeRepository = new EmployeeRepository();
+    private static IEmployeeRepository employeeRepository = new EmployeeRepository();
     private static final String REX_ID = "^NV[-]\\d{4}$";
     private static final String REX_NAME = "^[A-Z][a-z]*\\s([A-Z][a-z]*)(\\s[A-Z][a-z]*)*$";
     private static final String REX_IDENTITY_CARD = "^(\\d{4}|\\d)\\d{8}$";
@@ -52,8 +52,9 @@ public class EmployeeService implements IEmployeeService {
         } while (!name.matches(REX_NAME));
 
         LocalDate dateOfBirth = null;
-        boolean flag = false;
+        boolean flag;
         do {
+            flag = false;
             try {
                 System.out.print("Input dateEmployee: ");
                 String date = scanner.nextLine();
@@ -112,6 +113,7 @@ public class EmployeeService implements IEmployeeService {
         } while (!location.matches(REX_LOCATION));
         double wage = 0;
         do {
+            flag = false;
             try {
                 System.out.print("Input wageEmployee: ");
                 wage = Double.parseDouble(scanner.nextLine());
@@ -122,7 +124,7 @@ public class EmployeeService implements IEmployeeService {
                 System.out.println("Yêu cầu phải nhập số");
                 flag = true;
             }
-        } while (wage < 0 || flag == false);
+        } while (wage < 0 || flag == true);
         Employee employee = new Employee(id, name, dateOfBirth, gender, identityCard, telephone, email, education, location, wage);
         employeeRepository.addEmployee(employee);
     }
@@ -155,9 +157,9 @@ public class EmployeeService implements IEmployeeService {
                 String date = scanner.nextLine();
                 dateOfBirth = LocalDate.parse(date);
                 LocalDate date1 = dateOfBirth.plusYears(18);
-                if (date1.isBefore(LocalDate.now())){
+                if (date1.isBefore(LocalDate.now())) {
                     flag = true;
-                }else {
+                } else {
                     System.out.println("Nhân viên chưa đủ 18 tuổi");
                 }
 

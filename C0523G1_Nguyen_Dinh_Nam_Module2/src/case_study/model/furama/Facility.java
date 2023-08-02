@@ -1,7 +1,7 @@
 package case_study.model.furama;
 
 public abstract class  Facility {
-    private int id;
+    private String id;
     private String name;
     private  double area;
     private int costs;
@@ -11,7 +11,7 @@ public abstract class  Facility {
     public Facility() {
     }
 
-    public Facility(int id, String name, double area, int costs, int maxPeople, String rentalType) {
+    public Facility(String id, String name, double area, int costs, int maxPeople, String rentalType) {
         this.id = id;
         this.name = name;
         this.area = area;
@@ -20,11 +20,11 @@ public abstract class  Facility {
         this.rentalType = rentalType;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -70,13 +70,12 @@ public abstract class  Facility {
 
     @Override
     public String toString() {
-        return "Facility{" +
-                "id=" + id +
+        return "id=" + id +
                 ", name='" + name + '\'' +
                 ", area=" + area +
                 ", costs=" + costs +
                 ", maxPeople=" + maxPeople +
-                ", rentalType='" + rentalType + '\'' +
-                '}';
+                ", rentalType='" + rentalType;
+
     }
 }
