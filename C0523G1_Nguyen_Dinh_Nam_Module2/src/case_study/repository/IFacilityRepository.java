@@ -9,6 +9,7 @@ import java.util.Map;
 public interface IFacilityRepository {
     Map<Facility,Integer> getALlFacility() ;
     void addFacility(Facility facility);
-    LinkedHashMap<Facility,Integer> getFacilityMaintenance();
-    void removeFacility();
+    Map<Facility,Integer> getFacilityMaintenance();
+    void removeFacility(Facility facility);
+    Facility getById(String id);
 }

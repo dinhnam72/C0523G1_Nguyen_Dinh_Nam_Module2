@@ -125,7 +125,8 @@ public class EmployeeService implements IEmployeeService {
                 flag = true;
             }
         } while (wage < 0 || flag == true);
-        Employee employee = new Employee(id, name, dateOfBirth, gender, identityCard, telephone, email, education, location, wage);
+        Employee employee = new Employee(id, name, dateOfBirth, gender, identityCard, telephone, email,
+                education, location, wage);
         employeeRepository.addEmployee(employee);
     }
 

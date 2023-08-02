@@ -1,14 +1,20 @@
 package case_study.model.furama;
 
-public abstract class  Facility {
+import java.util.Objects;
+
+public abstract class Facility {
     private String id;
     private String name;
-    private  double area;
+    private double area;
     private int costs;
     private int maxPeople;
     private String rentalType;
 
     public Facility() {
+    }
+
+    public Facility(String id) {
+        this.id = id;
     }
 
     public Facility(String id, String name, double area, int costs, int maxPeople, String rentalType) {

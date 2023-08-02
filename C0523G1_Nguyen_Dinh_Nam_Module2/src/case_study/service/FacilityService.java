@@ -22,7 +22,7 @@ public class FacilityService implements IFacilityService {
     public void displayFacility() {
         Map<Facility, Integer> facilityMap = facilityRepository.getALlFacility();
         for (Facility facility : facilityMap.keySet()) {
-            System.out.println(facility + "-" + facilityMap.get(facility));
+            System.out.println(facility + " - Value: " + facilityMap.get(facility));
         }
     }
 
@@ -35,7 +35,7 @@ public class FacilityService implements IFacilityService {
             System.out.print("Input idFacility: ");
             id = scanner.nextLine();
             if (!id.matches(REX_IDVILLA)) {
-                System.out.println("Id không đúng định dạng SVXX_YYYY (Trong đó XX:(VL hoặc HO hoặc RO) và YYYY là các số từ 0-9)");
+                System.out.println("Id không đúng định dạng SVXX_YYYY (Trong đó XX:VL và YYYY là các số từ 0-9)");
             }
         } while (!id.matches(REX_IDVILLA));
         String name;
@@ -140,7 +140,7 @@ public class FacilityService implements IFacilityService {
             }
         } while (flag);
         Facility villa = new Villa(id, name, area, costs, maxPeople, rentalType, roomStandard, swimmingArea, floor);
-        facilityRepository.addFacility();
+        facilityRepository.addFacility(villa);
     }
 
     @Override
@@ -150,7 +150,7 @@ public class FacilityService implements IFacilityService {
             System.out.print("Input idFacility: ");
             id = scanner.nextLine();
             if (!id.matches(REX_IDHOUSE)) {
-                System.out.println("Id không đúng định dạng SVXX_YYYY (Trong đó XX:(VL hoặc HO hoặc RO) và YYYY là các số từ 0-9)");
+                System.out.println("Id không đúng định dạng SVXX_YYYY (Trong đó XX:HO và YYYY là các số từ 0-9)");
             }
         } while (!id.matches(REX_IDHOUSE));
         String name;
@@ -239,7 +239,7 @@ public class FacilityService implements IFacilityService {
             }
         } while (flag);
         Facility house = new House(id, name, area, costs, maxPeople, rentalType, roomStandard, floor);
-        facilityRepository.addFacility();
+        facilityRepository.addFacility(house);
     }
 
     @Override
@@ -249,7 +249,7 @@ public class FacilityService implements IFacilityService {
             System.out.print("Input idFacility: ");
             id = scanner.nextLine();
             if (!id.matches(REX_IDROOM)) {
-                System.out.println("Id không đúng định dạng SVXX_YYYY (Trong đó XX:(VL hoặc HO hoặc RO) và YYYY là các số từ 0-9)");
+                System.out.println("Id không đúng định dạng SVXX_YYYY (Trong đó XX:RO và YYYY là các số từ 0-9)");
             }
         } while (!id.matches(REX_IDROOM));
         String name;
@@ -356,17 +356,27 @@ public class FacilityService implements IFacilityService {
         System.out.print("Input freeService: ");
         String freeService = scanner.nextLine();
         Facility room = new Room(id, name, area, costs, maxPeople, rentalType, freeService);
-        facilityRepository.addFacility();
+        facilityRepository.addFacility(room);
     }
 
 
     @Override
     public void displayFacilityMaintenance() {
-
+        Map<Facility, Integer> facilityMaintenaceMap = facilityRepository.getFacilityMaintenance();
+        for (Facility key : facilityMaintenaceMap.keySet()) {
+            System.out.println(key + " - Number of bookings: " + facilityMaintenaceMap.get(key));
+        }
     }
 
     @Override
     public void removeFacility() {
-
+        System.out.print("Input idRemove: ");
+        String idRemove = scanner.nextLine();
+        Facility facility = facilityRepository.getById(idRemove);
+        if(facility==null){
+            System.out.println("Id không có trong hệ thộng");
+        }else {
+            facilityRepository.removeFacility(facility);
+        }
     }
 }

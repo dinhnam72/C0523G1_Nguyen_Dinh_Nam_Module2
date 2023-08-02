@@ -76,7 +76,7 @@ public class EmployeeRepository implements IEmployeeRepository {
 
     @Override
     public List<Employee> searchEmployee(String name) {
-        List<Employee> employeeList = this.getAllEmployee();
+        List<Employee> employeeList = getAllEmployee();
         List<Employee> searchEmployee = new ArrayList<>();
         for (int i = 0; i < employeeList.size(); i++) {
             if (employeeList.get(i).getName().contains(name)) {

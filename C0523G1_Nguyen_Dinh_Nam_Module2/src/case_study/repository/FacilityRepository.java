@@ -11,6 +11,7 @@ import java.util.Map;
 public class FacilityRepository implements IFacilityRepository {
     public static Map<Facility, Integer> facilityList = new LinkedHashMap<>();
 
+
     static {
         Facility Villa = new Villa("SVVL-0001", "Nha Nghi", 200, 1000000, 10, "DAY", "5 Star", 100, 4);
         Facility House = new House("SVHO-0001", "Nha O", 160, 7200000, 10, "MONTH", "2 Star", 3);
@@ -28,16 +29,34 @@ public class FacilityRepository implements IFacilityRepository {
 
     @Override
     public void addFacility(Facility facility) {
-        facilityList.put(facility,0);
+        facilityList.put(facility, 0);
     }
 
     @Override
-    public LinkedHashMap<Facility, Integer> getFacilityMaintenance() {
+    public Map<Facility, Integer> getFacilityMaintenance() {
+        Map<Facility, Integer> facilityMaintenaceMap = new LinkedHashMap<>();
+        for (Facility key : facilityList.keySet()) {
+            int numBookings = facilityList.get(key);
+            if (numBookings >= 5) {
+                facilityMaintenaceMap.put(key, numBookings);
+            }
+        }
+        return facilityMaintenaceMap;
+    }
+
+    @Override
+    public void removeFacility(Facility facility) {
+        facilityList.remove(facility);
+    }
+
+    @Override
+    public Facility getById(String id) {
+        Map<Facility,Integer> facilityIntegerMap = getALlFacility();
+        for (Map.Entry<Facility,Integer> entry: facilityIntegerMap.entrySet()){
+                if(entry.getKey().getId().equals(id)){
+                    return entry.getKey();
+                }
+        }
         return null;
-    }
-
-    @Override
-    public void removeFacility() {
-
     }
 }

@@ -20,7 +20,8 @@ public class Employee extends Person {
         this.wage = wage;
     }
 
-    public Employee(String id, String name, LocalDate date, String gender, String identityCard, String telephone, String email, String education, String location, double wage) {
+    public Employee(String id, String name, LocalDate date, String gender, String identityCard,
+                    String telephone, String email, String education, String location, double wage) {
         super(id, name, date, gender, identityCard, telephone, email);
         this.education = education;
         this.location = location;
@@ -52,7 +53,9 @@ public class Employee extends Person {
     }
 
     public String getInforToCSV() {
-        return this.getId() + "," + this.getName() + "," + this.getDate() + "," + this.getGender() + "," + this.getIdentityCard() + "," + this.getTelephone() + "," + this.getEmail() + "," + this.getEducation() + "," + this.getLocation() + "," + this.getWage();
+        return this.getId() + "," + this.getName() + "," + this.getDate() + "," + this.getGender() +
+                "," + this.getIdentityCard() + "," + this.getTelephone() + "," + this.getEmail() +
+                "," + this.getEducation() + "," + this.getLocation() + "," + this.getWage();
     }
 
     @Override
